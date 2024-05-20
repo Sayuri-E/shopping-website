@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Order page</title>
+         <style>
+
+         </style>
+         <link rel="stylesheet" href="Css sheets/style_orders.css">
+
+    </head>
+    <body>
+
+        <header>
+            <div class="h3">
+            <h3>Grocies Supermarket</h3>
+        </div>
+    </header>
+    <div class="navbar">
+        <img src="Pics/grocery_48dp_FILL0_wght400_GRAD0_opsz48.png" width="150" height="130"   class="logo">
+        <ul>
+            <li><a href="Home page.html">Home</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="Dairy products page.html">Dairy</a></li>
+            <li><a href="Vegetables page.html">Vegetables</a></li>
+            <li><a href="Cosmetic and skincare page.html">Cosmetic and SkinCare</a></li>
+            <li><a href="Orders.html">Orders</a></li>
+            <li><a href="Loyalty registration.html">Loyalty registration</a></li>
+            
+        </ul>
+    </div>
+
+    <h1>Your Orders</h1>
+
+    <form action="submit_registration.php" method="post">
+
+        <h2>Shipping Address</h2>
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="name" id="name" name="name">
+        </div>
+
+        <div>
+            <label for="address">Address:</label>
+            <input type="address" id="address" name="address">
+        </div>
+
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="phone" id="phone" name="phone">
+        </div>
+
+        <h2>Your Order</h2>
+
+
+        <div>
+            <label for="">Products:</label>
+            <select id="product" name="product" required>
+                <option value="Dairy">Dairy</option>
+                <option value="Vegetables">Vegetables</option>
+                <option value="Cosmetic and skincare">Cosmetics and Skincare</option>
+            </select>
+            <input type="products" id="products" name="products">
+            
+        </div>
+
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </div>
+
+        <div>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="5" cols="20"></textarea>
+        </div>
+
+        <div>
+            
+            <input type="submit" value="Add to Cart">
+        </div>
+        </form>
+
+        
+        <footer>
+            <p>&copy; Grocies Supermarket. All rights reserved.</p>
+        </footer>
+</body>
+</html>

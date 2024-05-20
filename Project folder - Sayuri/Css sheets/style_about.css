@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("C:/Users/sayum/Documents/HTML/Assignment 2 - supermarket site/Project folder - Sayuri/Pics/Final_design.png");
+    background-attachment: scroll;
+ 
+}
+
+.container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+    font-size: 20px;
+    
+}
+
+.h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.branch h2{
+    margin-bottom: 20px;
+}
+
+.branch{
+    margin-top: 0;
+
+   
+}
+
+.img{
+    display: flex;
+}
+
+.branch img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.content{
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: azure;
+}
+.content{
+    font-size: 30px;
+    margin-top: 80px;
+
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid;
+}
+
+th{
+    background-color: lightskyblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+td{
+    background-color: lightseagreen;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: lightskyblue;
+    color: black;
+}
+
+#h2{
+    text-align: center;
+}
+
+.h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: azure;
+    font-size: 45px;
+    padding: 20px;
+    background-color: seagreen;
+}
+
+@media (max-width:600px){
+    .navbar{
+        width: 100% ;
+        margin: auto;
+        padding: 15px 0;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .content{   
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: azure;
+    }
+    .content{
+        font-size: 30px;
+        margin-top: 80px;
+    
+    }
+    .content p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+
+    .img{
+        width: 100%;
+    }
+    
+    .img iframe{
+        width: 100%;
+    }
+
+tr td{
+    display: block;
+}
+
+tr th{
+    display: block;
+}
+
+    *{
+        font-size: small;
+
+    }
+}
+
+@media (max-width:700px){
+    .img{
+        flex-direction: column;
+    }
+
+    body{
+        background-size: contain;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+}
+

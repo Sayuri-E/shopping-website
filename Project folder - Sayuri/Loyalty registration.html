@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Loyalty Registration</title>
+         <style>
+
+         </style>
+         <link rel="stylesheet" href="Css sheets/style_loyalty.css">
+
+    </head>
+    <body>
+
+        <header>
+            <div class="h3">
+            <h3>Grocies Supermarket</h3>
+        </div>
+    </header>
+    <div class="navbar">
+        <img src="Pics/grocery_48dp_FILL0_wght400_GRAD0_opsz48.png" width="150" height="130"   class="logo">
+        <ul>
+            <li><a href="Home page.html">Home</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="Dairy products page.html">Dairy</a></li>
+            <li><a href="Vegetables page.html">Vegetables</a></li>
+            <li><a href="Cosmetic and skincare page.html">Cosmetic and SkinCare</a></li>
+            <li><a href="Orders.html">Orders</a></li>
+            <li><a href="Loyalty registration.html">Loyalty registration</a></li>
+            
+        </ul>
+    </div>
+    <h1>Loyalty Registration</h1>
+
+    
+        <form action="submit_registration.php" method="post">
+            <label for="">Name:</label>
+            <input type="text" id="textbox01" name="name" maxlength="20" value="enter your name">
+
+            <br></br>
+
+            <label for="">Phone:</label>
+            <input type="phone" id="phone" name="phone" required>
+            <br>
+
+            <label for="">Address:</label>
+            <input type="address" id="address" name="address" required>
+            <br>
+            
+            <label for="">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="">NIC:</label>
+            <input type="nic" id="nic" name="nic" required>
+            <br>
+
+            <label for="loyalty_plan">Choose a Loyalty Plan:</label>
+            <select id="loyalty_plan" name="loyalty_plan" required>
+                <option value="silver">Silver</option>
+                <option value="gold">Gold</option>
+                <option value="platinum">Platinum</option>
+            </select> <br></br>
+
+            <h3>Benefits of our Loyalty Plan!</h3>
+            <div id="benefits">
+                <p id="silver_benefits">Silver: Earn points with every purchase! Redeem those points on your next visit!</p>
+                <p id="gold_benefits">Gold: Earn double the points on selected items and redeem them too! Points over 300 get a free selected item!</p>
+                <p id="platinum_benefits">Platinum: Get exclusive offers and discounts and a platinum member!</p>
+
+            </div><br>
+            <input type="submit" value="Register">
+        </form>
+  
+        <footer>
+            <p>&copy; Grocies Supermarket. All rights reserved.</p>
+        </footer>
+        
+</body>
+</html>
