@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("Final_design.png");
+    background-attachment: scroll;
+    
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100p;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+
+}
+.content{
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: azure;
+}
+.content{
+    font-size: 30px;
+    margin-top: 80px;
+
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.container{
+ 
+    display: flex;
+}
+
+.info{
+    background-color: cornflowerblue;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;  
+    display: grid;
+    place-content: center;
+    font-weight: bold;
+    font-size: 22px;
+   
+   
+}
+
+.para1{
+    background-color: cornflowerblue;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 40px;
+    border-radius: 5px;  
+    display: grid;
+    place-content: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.subsection{
+    background-color: rgb(128, 193, 215);
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    image-orientation: center;
+    color: black;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.subsection:hover{
+    transform: translateY(-15px);
+}
+
+.p2{
+    text-align: center;
+    text-decoration: solid;
+    font-weight: 100;
+
+}
+
+.h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: azure;
+    font-size: 45px;
+    padding: 20px;
+    background-color: seagreen;
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: lightskyblue;
+    color: black;
+    margin-top: 40px;
+}
+
+
+
+@media (max-width:700px){
+    .container{
+        flex-direction: column;
+    }
+    .img{
+        flex-direction: column;
+    }
+
+   .container img{
+        width: 97%;
+        object-fit: cover;
+
+    }
+
+    body{
+        background-size: contain;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    *{
+        font-size: small;
+
+    }
+    
+}
+
+
+

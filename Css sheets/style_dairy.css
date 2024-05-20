@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("Final_design.png");
+    background-attachment: scroll;
+ 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(rgb(217, 0, 255), rgb(128, 0, 117), rgb(153, 46, 185), alpha);
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.center{
+    text-align: center;
+    font-size: 26px;
+}
+
+.introduction{
+    margin-bottom: 20px;
+}
+
+.dairy-products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.dairy-products{
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(rgb(188, 96, 206), rgb(102, 0, 128), rgb(195, 0, 255), alpha);
+   
+}
+
+.dairy-products h2{
+    margin-top: 0;
+    text-align: center;
+
+}
+
+.dairy-products p{
+    text-align: center;
+}
+
+a{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: darkblue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.navbar{
+    width: 95%;
+    margin: auto;
+    padding: 15px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+    
+
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: lightskyblue;
+    color: black;
+}
+
+.h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: azure;
+    font-size: 45px;
+    padding: 20px;
+    background-color: seagreen;
+}
+
+@media (max-width:600px){
+    .navbar{
+        width: 95%;
+        margin: auto;
+        padding: 15px 0;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    .dairy-products{
+        width: 200px;
+        padding: 20px;
+        margin: 10px;
+        background-color: cornflowerblue;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(rgb(188, 96, 206), rgb(102, 0, 128), rgb(195, 0, 255), alpha);
+       
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        max-width: 1100px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: lightblue;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(rgb(217, 0, 255), rgb(128, 0, 117), rgb(153, 46, 185), alpha);
+    }
+}
+
+@media (max-width:700px){
+    .img{
+        flex-direction: column;
+    }
+
+    body{
+        background-size: contain;
+    }
+
+    .navbar{
+        flex-direction: column;
+    }
+
+    .list{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    *{
+        font-size: small;
+
+    }
+}
+
